@@ -34,4 +34,5 @@ func InitConfig() {
 		log.Fatalf("unable to decode into struct, %v", err)
 	}
 	initDB()
+	InitRedis()
 }
