@@ -16,6 +16,11 @@ type Config struct {
 		MaxIdleConns int
 		MaxOpenConns int
 	}
+	Redis struct {
+		Addr     string
+		DB       int
+		Password string
+	}
 }
 
 var AppConfig *Config

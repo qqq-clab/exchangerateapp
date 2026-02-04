@@ -6,3 +6,8 @@ database:
   dsn: root:wjh0306@tcp(172.25.96.1:3306)/test?charset=utf8mb4&parseTime=True
   MaxIdleConns: 10
   MaxOpenConns: 100
+
+Redis:
+  addr: 172.25.96.1:6379
+  db: 0
+  password: 

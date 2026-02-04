@@ -9,9 +9,9 @@ import (
 
 func InitRedis() {
 	RedisClient := redis.NewClient(&redis.Options{
-		Addr:     "172.25.96.1:6379",
-		DB:       0,
-		Password: "",
+		Addr:     AppConfig.Redis.Addr,
+		DB:       AppConfig.Redis.DB,
+		Password: AppConfig.Redis.Password,
 	})
 
 	_, err := RedisClient.Ping().Result()
